@@ -1,6 +1,7 @@
 "use client";
 
-import { WALLET_DETAILS, plans } from "@/src/constants";
+import { ScrollReel } from "@/src/components/ScrollReel";
+import { WALLET_DETAILS, mainfeatures, plans } from "@/src/constants";
 import { useState } from "react";
 
 const MainContent = () => {
@@ -8,9 +9,9 @@ const MainContent = () => {
   return (
     <div className="main-container w-[68.75%] ">
       {/* TOP */}
-      <div className="rounded-xl flex gap-2 h-[220px] w-full">
+      <div className="rounded-3xl flex gap-2 h-[220px] w-full">
         <div
-          className="rounded-xl p-6 flex flex-col justify-between w-[72.2%] bg-cover"
+          className="rounded-3xl p-6 flex flex-col justify-between w-[72.2%] bg-cover"
           style={{
             backgroundImage:
               'url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg")',
@@ -42,12 +43,12 @@ const MainContent = () => {
 
         {/* WALLET */}
         <div
-          className="w-[27.8%] h-full rounded-xl p-3 bg-cover"
+          className="w-[27.8%] h-full rounded-3xl p-3 bg-cover"
           style={{
             backgroundImage: 'url("/lazer.png")',
           }}
         >
-          <div className="bg-[#232343] p-2 h-full w-full rounded-xl  flex flex-col justify-between">
+          <div className="bg-[#232343] p-2 h-full w-full rounded-3xl  flex flex-col justify-between">
             <div className="text-sm capitalize">
               <div className="flex justify-between">
                 <span>wallet balance</span>
@@ -66,7 +67,7 @@ const MainContent = () => {
 
             <div className="flex flex-col gap-1 text-sm">
               <span className="text-[12px] flex justify-end">Remaining</span>
-              <div className="p-2 flex flex-col bg-[#373A63] rounded-xl text-sm">
+              <div className="p-2 flex flex-col bg-[#373A63] rounded-3xl text-sm">
                 {WALLET_DETAILS.map(({ assetName, amount }, index) => (
                   <div
                     key={index}
@@ -82,12 +83,29 @@ const MainContent = () => {
         </div>
       </div>
       {/* SECOND */}
-      <p className="h-screen">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error iste
-        asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis enim
-        nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
-      </p>
-      hello
+
+      <div className="w-full h-[140px] p-3 flex gap-4 rounded-3xl bg-[#11112C]">
+        {mainfeatures.map(({title,description,bgColor,imagePath},index) => (
+        <div className={`relative w-full rounded-3xl p-4`} key={index} style={{backgroundColor: bgColor}}>
+          <div className="w-full h-full flex flex-col justify-end">
+            <h3 className="font-semibold text-lg capitalize">{title}</h3>
+            <p className="text-[rgb(255,255,255,0.5)] text-[12px]">{description}</p>
+          </div>
+          <img src={imagePath} alt="solar" className="absolute top-[-22px] right-[-15px] w-[150px] h-auto"/>
+        </div>
+        ))}
+      </div>
+
+      {/* THIRD */}
+      <ScrollReel />
+
+      <div className="rounded-3xl bg-[#11112C] w-full min-h-screen p-3">
+        <p className="h-screen">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error iste
+          asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis enim
+          nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
+        </p>
+      </div>
     </div>
   );
 };
