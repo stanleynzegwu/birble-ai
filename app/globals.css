@@ -142,7 +142,7 @@ input::-ms-input-placeholder {
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-10 flex h-screen w-fit flex-col justify-between overflow-auto;
+    @apply sticky left-0 top-0 z-10 flex w-fit flex-col justify-between overflow-auto;
   }
 
   .rightsidebar {
