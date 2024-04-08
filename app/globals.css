@@ -131,6 +131,10 @@ input::-ms-input-placeholder {
   color: #737373;
 }
 
+.scroll-container {
+  overflow-y: auto;
+}
+
 @layer components {
   .main-container {
     @apply flex min-h-screen flex-1 flex-col gap-6;

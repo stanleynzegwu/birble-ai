@@ -12,7 +12,7 @@ const MainContent = () => {
   const [selectedPlan, setSelectedPlan] = useState("upgrade");
 
   return (
-    <div className="main-container w-[68.75%] ">
+    <div className="main-container w-[68.75%] pr-4">
       {/* TOP */}
       <div className="rounded-3xl flex gap-2 h-[220px] w-full">
         <div
