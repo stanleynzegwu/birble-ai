@@ -14,7 +14,7 @@ const RightSideBarUniversal = ({ header, subHeader, aside, buttonName, isIcon })
           <span className="text-[13px] capitalize">{subHeader}</span>
           <span className="text-[12px] text-[rgb(255,255,255,0.5)] capitalize">{aside}</span>
         </div>
-        <button className="bg-[#72F6C0] text-sm font-semibold w-[90px] text-black rounded-[25px] p-2 capitalize">
+        <button className="bg-[#72F6C0] text-sm font-semibold w-[90px] max-h-[40px] text-black rounded-[25px] p-2 capitalize">
           {buttonName}
         </button>
       </div>
