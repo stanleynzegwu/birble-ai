@@ -1,5 +1,6 @@
 "use client";
 
+import ImagesDisplay from "@/src/components/ImagesDisplay";
 import MainFeatures from "@/src/components/MainFeatures";
 import MultiContentSelector from "@/src/components/MultiContentSelector";
 import { ScrollReel } from "@/src/components/ScrollReel";
@@ -98,11 +99,7 @@ const MainContent = () => {
         <div className="rounded-3xl p-3 bg-[rgb(35,35,67,0.8)] my-3 flex flex-col gap-4">
           <SearchBar />
           <MultiContentSelector />
-          <p className="h-screen">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error
-            iste asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis
-            enim nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
-          </p>
+          <ImagesDisplay />
         </div>
       </div>
     </div>
