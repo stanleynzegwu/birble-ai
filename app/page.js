@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex justify-between bg-gray-500 text-white">
       <LeftSidebar/>
       <div className="relative w-[83%]">
-        <div className="fixed w-full h-16 z-20 bg-gray-500">
+        <div className="fixed w-full h-16 z-50 bg-gray-500">
             TopBar
         </div>
         <div className="px-4 mt-16">

@@ -1,12 +1,15 @@
 "use client";
 
 import MainFeatures from "@/src/components/MainFeatures";
+import MultiContentSelector from "@/src/components/MultiContentSelector";
 import { ScrollReel } from "@/src/components/ScrollReel";
+import SearchBar from "@/src/components/SearchBar";
 import { WALLET_DETAILS, plans } from "@/src/constants";
 import { useState } from "react";
 
 const MainContent = () => {
   const [selectedPlan, setSelectedPlan] = useState("upgrade");
+
   return (
     <div className="main-container w-[68.75%] ">
       {/* TOP */}
@@ -89,17 +92,19 @@ const MainContent = () => {
       {/* THIRD */}
       <div className="relative w-full h-fit bg-transparent px-3">
         <ScrollReel />
-  
       </div>
       <div className="mt-[-170px] rounded-3xl bg-[#11112C] w-full h-fit px-3 pt-[190px] z-10 ">
-        <p>Recent Creations</p>
+        <p className="pl-3">Recent Creations</p>
+        <div className="rounded-3xl p-3 bg-[rgb(35,35,67,0.8)] my-3 flex flex-col gap-4">
+          <SearchBar />
+          <MultiContentSelector />
           <p className="h-screen">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error iste
-            asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis enim
-            nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error
+            iste asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis
+            enim nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
           </p>
-
         </div>
+      </div>
     </div>
   );
 };

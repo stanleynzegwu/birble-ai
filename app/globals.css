@@ -121,6 +121,16 @@ div::-webkit-scrollbar {
   background-color: rgb(114, 103, 103);
 }
 
+/* placeholder */
+input::placeholder {
+  color: #737373;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: #737373;
+}
+
 @layer components {
   .main-container {
     @apply flex min-h-screen flex-1 flex-col gap-6;
