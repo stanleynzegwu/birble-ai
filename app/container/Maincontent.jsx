@@ -18,8 +18,7 @@ const MainContent = () => {
         <div
           className="rounded-3xl p-6 flex flex-col justify-between w-[72.2%] bg-cover"
           style={{
-            backgroundImage:
-              'url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg")',
+            backgroundImage: 'url("/mainContentBg.png")',
           }}
         >
           <div className="flex flex-col justify-between">

@@ -19,12 +19,12 @@ export const mainfeatures = [
 ]
 
 export const HORIZONTALSCROLL_CONTENT = [
-    {icon:'/assets/icons/wallet.svg',name:'staking dashboard'},
-    {icon:'/assets/icons/wallet.svg',name:'chainlink raffle'},
-    {icon:'/assets/icons/wallet.svg',name:'payment center'},
-    {icon:'/assets/icons/wallet.svg',name:'media created'},
-    {icon:'/assets/icons/wallet.svg',name:'creativity center'},
-    {icon:'/assets/icons/wallet.svg',name:'campaign center'},
+    {icon:'/assets/icons/cardIcon1.png',name:'staking dashboard'},
+    {icon:'/assets/icons/cardIcon2.png',name:'chainlink raffle'},
+    {icon:'/assets/icons/cardIcon3.png',name:'payment center'},
+    {icon:'/assets/icons/cardIcon4.png',name:'media created'},
+    {icon:'/assets/icons/cardIcon5.png',name:'creativity center'},
+    {icon:'/assets/icons/cardIcon6.png',name:'campaign center'},
 ]
 
 export const RIGHTSIBEBAR_NEWS_CONTENT = [

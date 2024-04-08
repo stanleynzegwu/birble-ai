@@ -6,10 +6,10 @@ const LeftSidebar = () => {
       </div>
 
       <div className="flex flex-col gap-6 mt-10">
-        <span className="pl-8 font-semibold">Dashboard</span>
+        <span className="pl-5 font-semibold">Dashboard</span>
 
         <div className="space-y-4">
-          <span className="pl-8 font-semibold">AI Generator</span>
+          <span className="pl-5 font-semibold">AI Generator</span>
           <div className="space-y-4">
             {[
               { iconPath: "/assets/icons/conversationIcon.png", name: "conversation" },
@@ -19,7 +19,7 @@ const LeftSidebar = () => {
               { iconPath: "/assets/icons/codeIcon.png", name: "code generation" },
               { iconPath: "/assets/icons/TextVoiceIcon.png", name: "text to voice" },
             ].map(({ iconPath, name }, index) => (
-              <div className="flex gap-3 items-center pl-10" key={index}>
+              <div className="flex gap-3 items-center pl-8" key={index}>
                 <img src={iconPath} alt="icon" className="w-[10px] h-[10px]" />
                 <p className="capitalize text-[#B2B2B2]">{name}</p>
               </div>
@@ -27,12 +27,12 @@ const LeftSidebar = () => {
           </div>
         </div>
 
-        <span className="pl-8 font-medium">Collections</span>
-        <span className="pl-8 font-medium">Token Sale</span>
+        <span className="pl-5 font-medium">Collections</span>
+        <span className="pl-5 font-medium">Token Sale</span>
         <img src="/astronaut.png" alt="astronaut" className="my-4" />
-        <span className="pl-8 font-medium">Profiles & Settings</span>
-        <span className="pl-8 font-medium">FAQ & Help</span>
-        <span className="pl-8 font-medium">Logout</span>
+        <span className="pl-5 font-medium">Profiles & Settings</span>
+        <span className="pl-5 font-medium">FAQ & Help</span>
+        <span className="pl-5 font-medium">Logout</span>
 
         <div className="flex gap-3 items-center mt-4">
           <img src="/person.png" alt="person" className="rounded-2xl w-[65px] h-[65px]" />
