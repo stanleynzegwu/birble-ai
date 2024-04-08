@@ -1,18 +1,3 @@
-// const LeftSidebar = () => {
-//   return (
-//     // <div className="leftsidebar w-[17%] bg-[#131829]">
-//     <div className=" w-[17%] bg-[#131829]">
-//     <p h-screen>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit facere consectetur atque quod laboriosam voluptatum saepe! A dolor, error sequi, cum odit consectetur reiciendis blanditiis non deleniti atque, sint dolorem.</p>
-//     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit facere consectetur atque quod laboriosam voluptatum saepe! A dolor, error sequi, cum odit consectetur reiciendis blanditiis non deleniti atque, sint dolorem.</p>
-//     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit facere consectetur atque quod laboriosam voluptatum saepe! A dolor, error sequi, cum odit consectetur reiciendis blanditiis non deleniti atque, sint dolorem.</p>
-//     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit facere consectetur atque quod laboriosam voluptatum saepe! A dolor, error sequi, cum odit consectetur reiciendis blanditiis non deleniti atque, sint dolorem.</p>
-//     </div>
-//   )
-// };
-
-// export default LeftSidebar;
-
-
 const LeftSidebar = () => {
   return (
     <div className="fixed top-0 left-0 h-full w-[17%] bg-[#131623] overflow-y-auto z-[500] p-4 py-8">
