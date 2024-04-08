@@ -1,7 +1,8 @@
 "use client";
 
+import MainFeatures from "@/src/components/MainFeatures";
 import { ScrollReel } from "@/src/components/ScrollReel";
-import { WALLET_DETAILS, mainfeatures, plans } from "@/src/constants";
+import { WALLET_DETAILS, plans } from "@/src/constants";
 import { useState } from "react";
 
 const MainContent = () => {
@@ -83,43 +84,24 @@ const MainContent = () => {
         </div>
       </div>
       {/* SECOND */}
-
-      <div className="w-full h-[140px] p-3 flex gap-4 rounded-3xl bg-[#11112C]">
-        {mainfeatures.map(({title,description,bgColor,imagePath},index) => (
-        <div className={`relative w-full rounded-3xl p-4`} key={index} style={{backgroundColor: bgColor}}>
-          <div className="w-full h-full flex flex-col justify-end">
-            <h3 className="font-semibold text-lg capitalize">{title}</h3>
-            <p className="text-[rgb(255,255,255,0.5)] text-[12px]">{description}</p>
-          </div>
-          <img src={imagePath} alt="solar" className="absolute top-[-22px] right-[-15px] w-[150px] h-auto"/>
-        </div>
-        ))}
-      </div>
+      <MainFeatures />
 
       {/* THIRD */}
-      <ScrollReel />
-
-      <div className="rounded-3xl bg-[#11112C] w-full min-h-screen p-3">
-        <p className="h-screen">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error iste
-          asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis enim
-          nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
-        </p>
+      <div className="relative w-full h-fit bg-transparent px-3">
+        <ScrollReel />
+  
       </div>
+      <div className="mt-[-170px] rounded-3xl bg-[#11112C] w-full h-fit px-3 pt-[190px] z-10 ">
+        <p>Recent Creations</p>
+          <p className="h-screen">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus placeat, quasi error iste
+            asperiores molestias exercitationem voluptates distinctio odit iure perspiciatis enim
+            nostrum eius earum quae, omnis voluptatibus nesciunt delectus!
+          </p>
+
+        </div>
     </div>
   );
 };
 
 export default MainContent;
-
-// {/* SECOND */}
-// <div className="w-full flex gap-2 ">
-//   <div className="w-full rounded-xl p-2 bg-blue-100">
-//     <h3>Business center</h3>
-//     <p>Create Business Plans, White Paper and more</p>
-//   </div>
-//   <div className="w-full rounded-xl p-2 bg-red-200">
-//     <h3>Web3</h3>
-//     <p>Create Smart Contracts and NTFs</p>
-//   </div>
-// </div>
