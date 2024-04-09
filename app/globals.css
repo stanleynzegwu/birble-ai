@@ -179,6 +179,6 @@ input::-ms-input-placeholder {
 		transition: all 0.1s ease-in-out;
 	}
   .shadow-white {
-		box-shadow: -10px 8px 35px rgba(255, 255, 255, 1);
+		box-shadow: -10px 6px 30px 4px rgba(255, 255, 255, 1);
 	}
 }
