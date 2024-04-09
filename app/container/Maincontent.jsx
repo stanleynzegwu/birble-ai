@@ -15,7 +15,7 @@ const MainContent = () => {
   const [selectedPlan, setSelectedPlan] = useState("upgrade");
 
   return (
-    <div className="main-container w-[68.75%] pr-4">
+    <div className="main-container relative w-[68.75%] pr-4 z-50">
       {/* TOP */}
       <div className="rounded-3xl flex gap-2 h-[220px] w-full z-10">
         <div
@@ -126,6 +126,9 @@ const MainContent = () => {
           <ImagesDisplay />
         </div>
       </div>
+
+      {/* Gradient Background */}
+      <div className="firstMainContentGradient absolute -z-10 top-[150px] left-0 h-[350px] w-full" />
     </div>
   );
 };
