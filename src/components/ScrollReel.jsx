@@ -11,7 +11,7 @@ export function ScrollReel() {
         {HORIZONTALSCROLL_CONTENT.map(({ icon, name }, index) => (
           <div
             key={index}
-            className="p-6 shrink-0 w-[130px] h-[233px] rounded-3xl bg-[#4646D6] flex flex-col justify-between items-center"
+            className="relative p-6 shrink-0 w-[130px] h-[233px] rounded-3xl bg-[#4646D6] flex flex-col justify-between items-center z-10"
           >
             <Image
               src={icon}
@@ -21,6 +21,7 @@ export function ScrollReel() {
               style={{ maxWidth: "100%", height: "auto" }}
             />
             <span className="text-sm capitalize text-wrap">{name}</span>
+            <div className="scrollCardGradient absolute -z-10 top-[45px] left-1/2 transform -translate-x-1/2 h-[42px] w-[35%] " />
           </div>
         ))}
       </div>

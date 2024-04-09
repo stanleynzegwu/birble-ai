@@ -150,6 +150,10 @@ input::-ms-input-placeholder {
   background: rgba(31, 30, 99, 1.0);
   background: radial-gradient(at right center, rgba(31, 30, 99, 0.7), rgba(9, 7, 42, 1.0));
 }
+.scrollCardGradient {
+  background: rgb(255,255,255,0.4);
+  background: radial-gradient(at center, rgb(255,255,255,0.8), rgb(70,70,214,0.4));
+}
 
 @layer components {
   .main-container {
