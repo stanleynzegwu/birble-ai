@@ -11,10 +11,10 @@ const LeftSidebar = () => {
       </div>
 
       <div className="flex flex-col gap-6 mt-14">
-        <span className="pl-5 font-semibold">Dashboard</span>
+        <span className="pl-5 cursor-pointer">Dashboard</span>
 
         <div className="space-y-4">
-          <span className="pl-5 font-semibold">AI Generator</span>
+          <span className="pl-5 cursor-pointer">AI Generator</span>
           <div className="space-y-4">
             {[
               { iconPath: "/assets/icons/conversationIcon.png", name: "conversation" },
@@ -32,14 +32,14 @@ const LeftSidebar = () => {
                   height={12}
                   style={{ maxWidth: "100%", height: "auto" }}
                 />
-                <p className="capitalize text-[#B2B2B2]">{name}</p>
+                <p className="capitalize text-[#B2B2B2] text-[13px]">{name}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <span className="pl-5 font-medium">Collections</span>
-        <span className="pl-5 font-medium">Token Sale</span>
+        <span className="pl-5 cursor-pointer">Collections</span>
+        <span className="pl-5 cursor-pointer">Token Sale</span>
         {/* <img src="/astronaut.png" alt="astronaut" className="my-4" /> */}
         <Image
           src={astronaut}
@@ -49,9 +49,9 @@ const LeftSidebar = () => {
           height={300}
           style={{ maxWidth: "100%", height: "auto", marginTop: "16px" }}
         />
-        <span className="pl-5 font-medium">Profiles & Settings</span>
-        <span className="pl-5 font-medium">FAQ & Help</span>
-        <span className="pl-5 font-medium">Logout</span>
+        <span className="pl-5 cursor-pointer">Profiles & Settings</span>
+        <span className="pl-5 cursor-pointer">FAQ & Help</span>
+        <span className="pl-5 cursor-pointer">Logout</span>
 
         <div className="flex gap-3 items-center mt-4">
           {/* <img src="/person.png" alt="person" className="rounded-2xl w-[65px] h-[65px]" /> */}

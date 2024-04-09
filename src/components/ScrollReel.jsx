@@ -7,11 +7,11 @@ import { HORIZONTALSCROLL_CONTENT } from "../constants";
 export function ScrollReel() {
   return (
     <ScrollArea className="absolute top-0 left-0 w-[100%] border-none whitespace-nowrap rounded-md z-20">
-      <div className="flex w-max space-x-6">
+      <div className="flex w-max space-x-4">
         {HORIZONTALSCROLL_CONTENT.map(({ icon, name }, index) => (
           <div
             key={index}
-            className="relative p-6 shrink-0 w-[130px] h-[233px] rounded-3xl bg-[#4646D6] flex flex-col justify-between items-center z-10"
+            className="relative p-6 shrink-0 w-[120px] h-[220px] rounded-3xl bg-[#4646D6] flex flex-col justify-between items-center z-10"
           >
             <Image
               src={icon}
