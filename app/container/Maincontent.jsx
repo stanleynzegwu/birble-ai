@@ -128,7 +128,8 @@ const MainContent = () => {
       </div>
 
       {/* Gradient Background */}
-      <div className="firstMainContentGradient absolute -z-10 top-[150px] left-0 h-[350px] w-full" />
+      {/* <div className="firstMainContentGradient absolute -z-10 top-[150px] left-0 h-[350px] w-full" /> */}
+      <div className="absolute -z-10 top-[150px] left-0 h-[350px] w-full bg-gradient-to-r from-[#131623] from-10% via-[#1C2570] via-50% to-bottom-transparent to-transparent to-100%" />
     </div>
   );
 };
