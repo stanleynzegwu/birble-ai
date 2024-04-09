@@ -26,18 +26,19 @@
 // export default RightSideBarNewsScroll;
 
 "use client";
+
 import React, { useState } from "react";
 import { RIGHTSIBEBAR_NEWS_CONTENT } from "../constants";
 
 const RightSideBarNewsScroll = () => {
-  const [currentMessageIndex, setCurrentMessageIndex] = useState(-1); // Initialize with -1 indicating no message is currently being read
+  const [currentMessage, setCurrentMessage] = useState({when:'',messageIndex:-1}); // Initialize with -1 indicating no message is currently being read
 
-  const handleMouseEnter = (index) => {
-    setCurrentMessageIndex(index);
+  const handleMouseEnter = (when,messageIndex) => {
+    setCurrentMessage({when,messageIndex});
   };
 
   const handleMouseLeave = () => {
-    setCurrentMessageIndex(-1); // Reset when mouse leaves the message
+    setCurrentMessage({when:'',messageIndex:-1}); // Reset when mouse leaves the message
   };
 
   return (
@@ -48,19 +49,19 @@ const RightSideBarNewsScroll = () => {
           <div className="flex flex-col gap-3">
             {messages.map(({ time, details }, messageIndex) => (
               <div
-                className="flex gap-4"
+                className="flex gap-4 w-full"
                 key={messageIndex}
-                onMouseEnter={() => handleMouseEnter(messageIndex)}
+                onMouseEnter={() => handleMouseEnter(when,messageIndex)}
                 onMouseLeave={handleMouseLeave}
               >
                 <div
-                  className={`w-[12px] rounded-[25px] base-transition ${
-                    currentMessageIndex === messageIndex ? "bg-white" : "bg-[#6565A2]"
+                  className={`w-[6px] max-w-[6px] min-w-[6px] rounded-[25px] base-transition ${
+                    currentMessage.when === when && currentMessage.messageIndex === messageIndex ? "bg-white" : "bg-[#6565A2]"
                   }`}
                 />
                 <div className="flex flex-col gap-2 py-2">
                   <span className="text-[#6565A2]">{time}</span>
-                  <p className="capitalize">{details}</p>
+                  <p className="capitalize line-clamp-2">{details}</p>
                 </div>
               </div>
             ))}

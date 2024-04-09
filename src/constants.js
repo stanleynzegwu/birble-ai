@@ -36,12 +36,8 @@ export const RIGHTSIBEBAR_NEWS_CONTENT = [
         details: 'Its is a long established fact that user will be distracted by the readable content of a page'
       },
       {
-        time:'12:04pm',
-        details: 'Its is a long established fact that user will be distracted by the readable content of a page'
-      },
-      {
-        time:'12:04pm',
-        details: 'Its is a long established fact that user will be distracted by the readable content of a page'
+        time:'4:20pm',
+        details: 'webVr experiences can be created with Aframe, ReactXr . You can also work on webAr experience with Aframe, but with some limitations'
       },
     ]
   },
@@ -53,8 +49,12 @@ export const RIGHTSIBEBAR_NEWS_CONTENT = [
         details: 'many desktop publishing packages and web page editors now use lorem ipsum as thier model text'
       },
       {
-        time:'11:43am',
+        time:'2:43pm',
         details: 'many desktop publishing packages and web page editors now use lorem ipsum as thier model text'
+      },
+      {
+        time:'6:55pm',
+        details: 'Its is a long established fact that user will be distracted by the readable content of a page'
       },
     ]
   },

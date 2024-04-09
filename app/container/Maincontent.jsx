@@ -95,19 +95,21 @@ const MainContent = () => {
                 </span>
               </div>
             </div>
-
             <div className="flex flex-col gap-1 text-sm">
               <span className="text-[12px] flex justify-end text-[#A7A7BE]">Remaining</span>
-              <div className="p-2 flex flex-col bg-[#373A63] rounded-2xl text-sm">
+              <div className="relative p-2 flex flex-col bg-[#373A63] rounded-2xl text-sm">
                 {WALLET_DETAILS.map(({ assetName, amount }, index) => (
                   <div
                     key={index}
-                    className="text-[12px] flex justify-between capitalize first:border-b-[.5px] border-[rgb(255,255,255,0.1)]"
+                    className="text-[12px] flex justify-between capitalize"
                   >
                     <span className="text-[#A7A7BE]">{assetName}</span>
                     <span className="">{amount}</span>
                   </div>
                 ))}
+
+                {/* ABSOLUTELY POSITIONED LINE */}
+                <div className="absolute w-full left-4 top-1/2 transform -translate-y-1/2 bg-[rgb(255,255,255,0.1)] h-[1px]" />
               </div>
             </div>
           </div>

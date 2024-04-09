@@ -18,7 +18,7 @@ export default function Home() {
                   alt={`icon`}
                   width={20}
                   height={20}
-                  style={{ maxWidth: "100%", height: "auto" }}
+                  style={{ maxWidth: "100%", height: "auto", cursor:'pointer' }}
                 /> 
                 ))}
               </div>
