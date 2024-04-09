@@ -102,7 +102,7 @@ const MainContent = () => {
                 {WALLET_DETAILS.map(({ assetName, amount }, index) => (
                   <div
                     key={index}
-                    className="text-[12px] flex justify-between capitalize first:border-b-[.5px] border-gray-100"
+                    className="text-[12px] flex justify-between capitalize first:border-b-[.5px] border-[rgb(255,255,255,0.1)]"
                   >
                     <span className="text-[#A7A7BE]">{assetName}</span>
                     <span className="">{amount}</span>

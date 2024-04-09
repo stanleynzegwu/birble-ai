@@ -24,6 +24,7 @@
 // };
 
 // export default RightSideBarNewsScroll;
+
 "use client";
 import React, { useState } from "react";
 import { RIGHTSIBEBAR_NEWS_CONTENT } from "../constants";
