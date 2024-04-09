@@ -7,6 +7,9 @@ import { ScrollReel } from "@/src/components/ScrollReel";
 import SearchBar from "@/src/components/SearchBar";
 import { WALLET_DETAILS, plans } from "@/src/constants";
 import { useState } from "react";
+import Image from "next/image";
+import bgImage from "../../public/mainContentBg.png";
+import walletBgImage from "../../public//lazer.png";
 
 const MainContent = () => {
   const [selectedPlan, setSelectedPlan] = useState("upgrade");
@@ -14,13 +17,23 @@ const MainContent = () => {
   return (
     <div className="main-container w-[68.75%] pr-4">
       {/* TOP */}
-      <div className="rounded-3xl flex gap-2 h-[220px] w-full">
+      <div className="rounded-3xl flex gap-2 h-[220px] w-full z-10">
         <div
-          className="rounded-3xl p-6 flex flex-col justify-between w-[72.2%] bg-cover"
-          style={{
-            backgroundImage: 'url("/mainContentBg.png")',
-          }}
+          className="relative rounded-3xl p-6 flex flex-col justify-between w-[72.2%]"
+          // style={{
+          //   backgroundImage: 'url("/mainContentBg.png")',
+          // }}
         >
+          <div className="absolute -z-10 top-0 left-0 w-full h-full rounded-3xl">
+            <Image
+              src={bgImage}
+              alt={"backgound image"}
+              placeholder="blur"
+              width={1000}
+              height={1000}
+              className="w-full h-full bg-cover object-cover rounded-3xl"
+            />
+          </div>
           <div className="flex flex-col justify-between">
             <div className="flex flex-col">
               <span className="capitalize font-extrabold text-[32px]">dashboard</span>{" "}
@@ -47,19 +60,31 @@ const MainContent = () => {
 
         {/* WALLET */}
         <div
-          className="w-[27.8%] h-full rounded-3xl p-3 bg-cover"
-          style={{
-            backgroundImage: 'url("/lazer.png")',
-          }}
+          className="relative w-[27.8%] h-full rounded-3xl p-3"
+          // style={{
+          //   backgroundImage: 'url("/lazer.png")',
+          // }}
         >
+          <div className="absolute -z-10 top-0 left-0 w-full h-full rounded-3xl ">
+            <Image
+              src={walletBgImage}
+              alt={"backgound image"}
+              placeholder="blur"
+              width={1000}
+              height={1000}
+              className="w-full h-full bg-cover object-cover rounded-3xl"
+            />
+          </div>
           <div className="bg-[#232343] p-2 h-full w-full rounded-3xl  flex flex-col justify-between">
             <div className="text-sm capitalize">
               <div className="flex justify-between">
                 <span>wallet balance</span>
-                <img
-                  src="/assets/icons/wallet.svg"
-                  alt="wallet icon"
-                  className="w-[24px] h-[24px]"
+                <Image
+                  src={"/assets/icons/empty-wallet.png"}
+                  alt={"walet icon"}
+                  width={22}
+                  height={22}
+                  className="bg-cover object-cover"
                 />
               </div>
 

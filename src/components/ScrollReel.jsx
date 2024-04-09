@@ -13,7 +13,13 @@ export function ScrollReel() {
             key={index}
             className="p-6 shrink-0 w-[130px] h-[233px] rounded-3xl bg-[#4646D6] flex flex-col justify-between items-center"
           >
-            <img src={icon} alt="icon" className="h-auto w-30" />
+            <Image
+              src={icon}
+              alt="icon"
+              width={100}
+              height={100}
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
             <span className="text-sm capitalize text-wrap">{name}</span>
           </div>
         ))}
