@@ -21,7 +21,7 @@ export function ScrollReel() {
               style={{ maxWidth: "100%", height: "auto" }}
             />
             <span className="text-sm capitalize text-wrap">{name}</span>
-            <div className="scrollCardGradient absolute -z-10 top-[45px] left-1/2 transform -translate-x-1/2 h-[42px] w-[35%] " />
+            <div className="absolute -z-10 top-[45px] left-1/2 transform -translate-x-1/2 h-[25px] w-[25%] rounded-full bg-white opacity-[1] shadow-white" />
           </div>
         ))}
       </div>

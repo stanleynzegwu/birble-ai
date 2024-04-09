@@ -75,35 +75,37 @@ const MainContent = () => {
               className="w-full h-full bg-cover object-cover rounded-3xl"
             />
           </div>
-          <div className="bg-[#232343] p-2 h-full w-full rounded-3xl  flex flex-col justify-between">
+          <div className="p-2 2xl:p-6 h-full w-full rounded-3xl flex flex-col justify-between bg-gradient-to-bl from-[#1D2641] to-[#1D2E56]">
             <div className="text-sm capitalize">
               <div className="flex justify-between">
                 <span>wallet balance</span>
                 <Image
                   src={"/assets/icons/empty-wallet.png"}
                   alt={"walet icon"}
-                  width={22}
-                  height={22}
+                  width={20}
+                  height={20}
                   className="bg-cover object-cover"
                 />
               </div>
 
               <div className="flex flex-col capitalize">
                 <span className="text-lg font-bold">9,758.41</span>
-                <span className="text-[12px]">birble AI tokens</span>
+                <span className="text-[12px] text-[#A7A7BE] tracking-tighter">
+                  birble AI tokens
+                </span>
               </div>
             </div>
 
             <div className="flex flex-col gap-1 text-sm">
-              <span className="text-[12px] flex justify-end">Remaining</span>
-              <div className="p-2 flex flex-col bg-[#373A63] rounded-3xl text-sm">
+              <span className="text-[12px] flex justify-end text-[#A7A7BE]">Remaining</span>
+              <div className="p-2 flex flex-col bg-[#373A63] rounded-2xl text-sm">
                 {WALLET_DETAILS.map(({ assetName, amount }, index) => (
                   <div
                     key={index}
                     className="text-[12px] flex justify-between capitalize first:border-b-[.5px] border-gray-100"
                   >
-                    <span>{assetName}</span>
-                    <span>{amount}</span>
+                    <span className="text-[#A7A7BE]">{assetName}</span>
+                    <span className="">{amount}</span>
                   </div>
                 ))}
               </div>
