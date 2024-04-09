@@ -1,18 +1,13 @@
 import Image from "next/image";
 import astronaut from "../../public/astronaut.png";
+import birbleLogo from "../../public/assets/icons/birbleAILogo.png";
 
 const LeftSidebar = () => {
   return (
     <div className="fixed top-0 left-0 h-full w-[17%] bg-[#131623] overflow-y-auto z-[500] p-4 py-8">
       <div className="flex justify-center">
         {/* <img src="/assets/icons/birbleAILogo.png" alt="birble_logo" className="" /> */}
-        <Image
-          src={"/assets/icons/birbleAILogo.png"}
-          alt="birble_logo"
-          width={110}
-          height={100}
-          className="h-auto"
-        />
+        <Image src={birbleLogo} alt="birble_logo" width={110} height={100} className="h-auto" />
       </div>
 
       <div className="flex flex-col gap-6 mt-14">
@@ -74,6 +69,12 @@ const LeftSidebar = () => {
           </div>
         </div>
       </div>
+
+      {/* GRADIENTS */}
+      {/* <div className="absolute -z-10 top-0 left-0 h-[300px] w-full bg-gradient-to-br from-[#131623] to-[#1C2570]" /> */}
+      {/* <div className="absolute -z-10 top-[175px] left-0 h-[300px] w-full bg-gradient-to-r from-[#131623] from-10% via-[#131623] via-20% to-bottom-transparent to-[#1C2570] to-90%" /> */}
+      <div className="firstLeftSideGradient absolute -z-10 top-[165px] left-0 h-[400px] w-full " />
+      <div className="secondLeftSideGradient absolute -z-10 top-[650px] left-0 h-[250px] w-full " />
     </div>
   );
 };

@@ -135,6 +135,18 @@ input::-ms-input-placeholder {
   overflow-y: auto;
 }
 
+/* Gradient */
+.firstLeftSideGradient {
+  /* background: #131623;
+  background: radial-gradient(at right center,#1C2570, #131623); */
+  background: rgba(28, 37, 112, 1.0);
+  background: radial-gradient(at right center, rgba(32, 42, 134, 0.4), rgba(20, 22, 35, 1.0));
+}
+.secondLeftSideGradient {
+  background: rgba(68, 32, 130, 1.0);
+  background: radial-gradient(at left center, rgba(68, 32, 130, 0.4), rgba(20, 22, 35, 1.0));
+}
+
 @layer components {
   .main-container {
     @apply flex min-h-screen flex-1 flex-col gap-6;
