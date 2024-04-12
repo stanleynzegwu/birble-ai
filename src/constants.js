@@ -1,9 +1,9 @@
-export const plans = ['pro plan', 'upgrade']
+export const PLANS = ['pro plan', 'upgrade']
 export const WALLET_DETAILS = [
     {assetName:'tokens',amount:300},
     {assetName:'collection creation',amount:24}
 ]
-export const mainfeatures = [
+export const MAIN_FEATURES = [
     {
       title: "Business center",
       description: "Create Business Plans, White Paper and more",
